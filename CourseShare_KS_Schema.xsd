@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="euc-kr" ?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="KSRoot">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="KSInfo" minOccurs="0" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<!-- 1. Case Number -->
+							<xs:element name="CaseNumber" type="xs:string" minOccurs="1" maxOccurs="1" />
+							<!-- 2. KS Map Generated Date & Time -->
+							<xs:element name="KSMapGeneratedDateTime" type="xs:string" minOccurs="1" maxOccurs="1" />
+							<!-- 3. No. of User Selected Terms  -->
+							<xs:element name="NoOfUserSelectedTerms" type="xs:string" minOccurs="1" maxOccurs="1" />
+							<!-- 4. Processing Time to Generate KS Map -->
+							<xs:element name="ProcessingTimeToGenerateKSMap" type="xs:string" minOccurs="1" maxOccurs="1" />
+							<!-- 5. No. of Nodes -->
+							<xs:element name="NoOfNodes" type="xs:string" minOccurs="1" maxOccurs="1" />
+							<!-- 6. No. of Links -->
+							<xs:element name="NoOfLinks" type="xs:string" minOccurs="1" maxOccurs="1" />
+							<!-- 7. Coherence -->
+							<xs:element name="Coherence" type="xs:string" minOccurs="1" maxOccurs="1" />
+							<!-- 8. Weight Information -->
+							<xs:element name="WeightInformation" type="xs:string" minOccurs="1" maxOccurs="1" />
+							<!-- 9. File Name w/ Extension -->
+							<xs:element name="FileNameWithExtension" type="xs:string" minOccurs="1" maxOccurs="1" />
+							<!-- 10. File Uploaded Date & Time -->
+							<xs:element name="FileUploadedDateTime" type="xs:string" minOccurs="1" maxOccurs="1" />
+							<!-- 11. Total No. of Words -->
+							<xs:element name="TotalNoOfWords" type="xs:string" minOccurs="1" maxOccurs="1" />
+							<!-- 12. No. of Auto Extracted Terms -->
+							<xs:element name="NoOfAutoExtractedTerms" type="xs:string" minOccurs="1" maxOccurs="1" />
+							<!-- 13. Image of KS Map -->
+							<xs:element name="ImageOfKSMap" type="xs:string" minOccurs="1" maxOccurs="1" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>	
+</xs:schema>
